@@ -1,12 +1,3 @@
-- &letterHint
-    type: standard
-    content: Enter the letter of the correct answer.
-    cost: 0
-    requirements: null
-- &questionCommon
-    category: Questions
-    state: visible
-    type: standard 
 - name: Question 001
   description: >+
     What is the CIA triad?<br/>
@@ -17,10 +8,15 @@
     (Difficulty Level: 1)
   max_attempts: 0
   value: 20
-  <<: *questionCommon
+  category: Questions
+  state: visible
+  type: standard 
   flags:
     - type: static
       content: c
       data: null
   hints:
-    - *letterHint
+    - type: standard
+      content: Enter the letter of the correct answer.
+      cost: 0
+      requirements: null
