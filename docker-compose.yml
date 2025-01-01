@@ -80,6 +80,23 @@ services:
     networks:
       default:
 
+  client:
+    build:
+      context: elevation-of-privilege-0.16.0
+      dockerfile: ../dockerfiles/Dockerfile.EOPClient
+    ports:
+      - '8360:8080'
+    container_name: threats-client
+    restart: unless-stopped
+
+  server:
+    build:
+      context: elevation-of-privilege-0.16.0
+      dockerfile: ../dockerfiles/Dockerfile.EOPServer
+    container_name: threats-server
+    restart: unless-stopped
+    network_mode: service:client
+
 networks:
     default:
     internal:

@@ -35,3 +35,7 @@ Are located in the [scripts](scripts) folder.
 ## Hands On Activities 
 
 Detailed process for building and automating is covered in the [steps](steps.md) document.
+
+## Elevation of Privilege
+
+This repository also contains a runnable [Elevation of Privilege](https://github.com/dehydr8/elevation-of-privilege) game and an example OWASP Threat Dragon [threat model](CodemashThreatDragonModel.json) at [localhost:8360](http://localhost:8360)
