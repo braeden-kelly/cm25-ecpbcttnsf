@@ -1,0 +1,18 @@
+- name: Codemash 001
+  description: >+
+    Who is the President of the Codemash Board of Directors?
+    (Difficulty Level: 1)
+  max_attempts: 0
+  value: 20
+  category: Codemash
+  state: visible
+  type: standard 
+  flags:
+    - type: static
+      content: Brian Prince
+      data: null
+  hints:
+    - type: standard
+      content: Enter the name of the guy with the colorful hair.
+      cost: 0
+      requirements: null
