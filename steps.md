@@ -75,3 +75,11 @@ Once the CTFd files have been generated, create an archive of the *db* directory
 node createExport.js --input ..\CTF_Data\staging --output ..\.data\CTFd\events\Codemash\export.zip
 ```
 
+
+#### Update LLM CTF Prommts
+
+Copy the challenge/prompt data file to the LLM CTF data directory.
+
+```
+copy ..\CTF_Data\data\llm.yml ..\.data\llmctf\data
+```

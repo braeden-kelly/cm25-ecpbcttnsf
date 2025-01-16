@@ -2,7 +2,7 @@ FROM node:20-alpine
 
 COPY ./llmctf /app
 
-COPY ./CTF_Data/data/llm.yml /var/data/llm.yml
+#COPY ./CTF_Data/data/llm.yml /var/data/llm.yml
 
 WORKDIR /app
 
